@@ -1,4 +1,4 @@
-name: ipk
+name: mmdvmipk
 
 on:
   repository_dispatch:
@@ -159,18 +159,14 @@ jobs:
       id: release
       uses: ncipollo/release-action@v1
       with:
-        name: ${{ env.DATE }} 科学上网常用ipk
+        name: ${{ env.DATE }} mmdvmipk
         allowUpdates: true
         tag: ${{ env.FILE_NAME }}
         commit: main
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
-          ## 以下为常用科学上网插件（每日定时更新）
-          使用方式：
-            1. 软路由后台-系统-软件包-过滤器-查找你要替换的IPK（如passwall，你就搜passwall就行）-移除
-            2. 下载下面对应的IPK文件， 软路由后台-系统-文件传输-选择本地文件-选择ipk上传-上传文件列表-安装
-          注意：单独上传IPK可能会因为依赖问题无法正确使用，还是建议刷新固件。
-        artifacts: ${{ env.FIRMWARE }}/*
+          ## 以下为mmdvm插件
+                  artifacts: ${{ env.FIRMWARE }}/*
 
     - name: Telegram notification
       if: steps.organize.outputs.status == 'success' && !cancelled()
