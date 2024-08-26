@@ -166,7 +166,7 @@ jobs:
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
           ## 以下为mmdvm插件
-                  artifacts: ${{ env.FIRMWARE }}/*
+          artifacts: ${{ env.FIRMWARE }}/*
 
     - name: Telegram notification
       if: steps.organize.outputs.status == 'success' && !cancelled()
