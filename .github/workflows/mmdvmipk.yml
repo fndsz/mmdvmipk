@@ -72,8 +72,7 @@ jobs:
         cd openwrt
         OpVersion2=$(date "+%Y.%m.%d"\ \compiled\ \by\ \JCNF\ \TG:@mffjc)
         echo $OpVersion2
-        sed -i "s/DISTRIB_REVISION=.*/DISTRIB_REVISION=\'$OpVersion1\ $OpVersion2\'\"\ \>>\ \/\etc\/\openwrt_release/" package/lean/default-settings/files/zzz-default-settings
-    - name: Load custom configuration
+        sed -i "s/DISTRIB_REVISION=.*/DISTRIB_REVISION=\'$OpVersion1\ $OpVersion2\'\"\ \>>\ \/\etc\/\openwrt_release/"
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
