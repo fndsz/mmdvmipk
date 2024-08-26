@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # MMDVM-OPENWRT
+make && sudo make install
+popd
 svn co https://github.com/qzyuebing/mmdvm-openwrt/YSFReflector-clients
 svn co https://github.com/qzyuebing/mmdvm-openwrt/dapnet-gateway
 svn co https://github.com/qzyuebing/mmdvm-openwrt/ircddb-gateway
