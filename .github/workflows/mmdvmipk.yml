@@ -70,7 +70,6 @@ jobs:
     - name: Openwrt version
       run: |
         cd openwrt
-        OpVersion2=$(date "+%Y.%m.%d"\ \compiled\ \by\ \JCNF\ \TG:@mffjc)
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_P2_SH
