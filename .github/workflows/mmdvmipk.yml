@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          path: './mentohust'
+          path: './mmdvm-openwrt'
           fetch-depth: 0
 
       - name: Building packages
@@ -32,7 +32,7 @@ jobs:
         env:
           ARCH: ${{ matrix.arch }}-openwrt-21.02
           FEEDNAME: packages_ci
-          PACKAGES: mentohust
+          PACKAGES: mmdvm
           NO_REFRESH_CHECK: true
 
       - name: Upload artifacts
