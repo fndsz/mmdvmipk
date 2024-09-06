@@ -14,5 +14,5 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-sed -i '$a src-git mmdvm-openwrt https://github.com/fndsz/mmdvm-openwrt' feeds.conf.default
-#git clone  https://github.com/fndsz/mmdvm-openwrt.git package/mmdvm/mmdvm-openwrt
+#sed -i '$a src-git mmdvm-openwrt https://github.com/fndsz/mmdvm-openwrt' feeds.conf.default
+git clone  https://github.com/fndsz/mmdvm-openwrt.git package/mmdvm/mmdvm-openwrt
