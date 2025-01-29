@@ -1,0 +1,37 @@
+
+config system
+	option ttylogin '0'
+	option log_size '64'
+	option urandom_seed '0'
+	option timezone 'CST-8'
+	option zonename 'Asia/Shanghai'
+	option description '中兴便携路由器'
+	option log_proto 'udp'
+	option conloglevel '8'
+	option cronloglevel '5'
+	option hostname 'BI4PCS'
+
+config timeserver 'ntp'
+	list server 'ntp.tencent.com'
+	list server 'ntp1.aliyun.com'
+	list server 'ntp.ntsc.ac.cn'
+	list server 'cn.ntp.org.cn'
+
+config led
+	option name 'wifi'
+	option trigger 'netdev'
+	list mode 'link'
+	list mode 'tx'
+	list mode 'rx'
+	option dev 'wlan0'
+	option sysfs 'red:status'
+
+config led
+	option name 'WAN'
+	option trigger 'netdev'
+	option dev 'eth0'
+	list mode 'link'
+	list mode 'tx'
+	list mode 'rx'
+	option sysfs 'blue:status'
+
