@@ -47,7 +47,7 @@ config mmdvmhost 'NXDN_Network'
 config mmdvmhost 'DMR_Network'
 	option Address '4601.master.brandmeister.network'
 	option Password 'password'
-	option Enable '0'
+	option Enable '1'
 
 config mmdvmhost 'Info'
 	option RXFrequency '438100000'
