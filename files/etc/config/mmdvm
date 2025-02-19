@@ -104,7 +104,7 @@ config dstar 'ircddbgateway'
 	option dplusLogin 'N0CALL'
 
 config ysfgateway 'YSFG_General'
-	option Callsign 'BI4PCS'
+	option Callsign 'N0CALL'
 
 config p25gateway 'P25G_General'
 	option Callsign 'N0CALL'
