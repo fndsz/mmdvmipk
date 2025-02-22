@@ -58,7 +58,7 @@ config mmdvmhost 'Info'
 	option Height '50'
 	option Location 'NoWhere'
 	option URL 'https://www.qrz.com/db/N0CALL'
-	option Description 'ZTE-Q7'
+	option Description 'Fndsz Router MMDVM'
 
 config mmdvmhost 'POCSAG_Network'
 	option Enable '0'
