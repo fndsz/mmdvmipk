@@ -26,8 +26,6 @@ config internal 'ccache'
 
 config internal 'themes'
 	option Bootstrap '/luci-static/bootstrap'
-	option BootstrapDark '/luci-static/bootstrap-dark'
-	option BootstrapLight '/luci-static/bootstrap-light'
 	option Bootstrap_MMDVM '/luci-static/bootstrap-mmdvm'
 
 config internal 'apply'
