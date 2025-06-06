@@ -73,8 +73,9 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a          
     
     - name: Install feeds
-      run: cd feeds/mmdvm
-           git apply mmdvm.patch
+      run: | 
+           cd feeds/mmdvm;
+           git apply mmdvm.patch;
            cd openwrt && ./scripts/feeds install -a 
        
     - name: Load custom configuration
