@@ -74,8 +74,7 @@ jobs:
     
     - name: Install mmdvm
       run: | 
-           cd feeds/mmdvm
-           git apply mmdvm.patch
+           cd feeds/mmdvm git apply mmdvm.patch
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a 
