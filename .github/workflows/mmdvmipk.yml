@@ -71,11 +71,11 @@ jobs:
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a          
-
+            cd ./feeds/mmdvm git apply mmdvm.patch
+ 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a 
-           cd ./feeds/mmdvm && git apply mmdvm.patch
-  
+            
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
