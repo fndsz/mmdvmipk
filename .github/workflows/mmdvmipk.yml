@@ -72,7 +72,6 @@ jobs:
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a 
 
-    - name: mmdvm patch
        cd ./feeds/mmdvm;git apply mmdvm.patch
              
     - name: Install feeds
