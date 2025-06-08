@@ -22,7 +22,7 @@ on:
 
 env:
   REPO_URL: https://github.com/lazywalker/ostar
-  REPO_BRANCH: openwrt-21.02
+  REPO_BRANCH: 17.09
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: 76x8.config
   DIY_P1_SH: diy-part1.sh
