@@ -16,4 +16,3 @@
 # Add a feed source
 #sed -i '$a src-git mmdvm https://github.com/fndsz/mmdvm-op' feeds.conf.default
 git clone https://github.com/fndsz/mmdvm-op.git package/mmdvm/mmdvm-openwrt
-#git clone https://github.com/fndsz/mmdvmpatch.git package/mmdvm/mmdvm-openwrt
